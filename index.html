@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16 paskaita</title>
+    <style>
+        body {
+            max-width: 1920px;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Javascript pirma paskaita</h1>
+    <p>Sia paskaita startuojam su Javascript pradmenimis</p>
+
+    <p class="keiciamas-turinys">Cia keiciamas turinys</p>
+
+    <script>
+        "use strict";
+        // pasirinkome elementa
+        //document.querySelector(".keiciamas-turinys").innerHTML = "Sekmingas p teksto pakeitimas";
+        //console.log(document.querySelector(".keiciamas-turinys").innerHTML); // ?? "Sekmingas p teksto pakeitimas"
+        //document.querySelector(".keiciamas-turinys").innerHTML = "Antra karta pakeistas";
+        //console.log(document.querySelector(".keiciamas-turinys").innerHTML); // ?? "Antra karta pakeistas"
+
+        //pasirinkta elementa isvedame i konsole
+        //console.log(document.querySelector(".keiciamas-turinys").innerHTML); // ?? "Antra karta pakeistas"
+
+        //1. Priskyrimas - mes pasirenkame kazkoki elementa is turinio
+        //2. Atliekami pakeitimai
+        //3. Yra atvaizduojami - console.log; tiesiai i dizaina
+
+        //Kintamieji
+        //Kintamasis - isskirta vieta kompiuterio atmintyje, kurioje mes saugome informacija
+
+        //Kintamojo vardas negali buti pradedamas: . , 1 pvz.: .kintamasis ,kintamasis 1kintamasis
+
+        var kintamasis1; //kintamojo deklaravimas
+        kintamasis1 = 5; //kintamojo priskyrimas
+        console.log(kintamasis1); //kintamojo išvedimas
+
+        var kintamasis2;
+        kintamasis2 = "kintamasis saugo teksta"; //String
+        console.log(kintamasis2);
+
+        var kintamasis3;
+        kintamasis3 = 'neturejo del kabuciu pasikeisti'; //String
+        console.log(kintamasis3);
+
+        var kintamasis4 = "Knyga 'Pietinia kronikas'";
+        console.log(kintamasis4);
+
+        var kintamasis5 = 'Knyga "Pietinia kronikas"';
+        console.log(kintamasis5);
+
+        var kintamasis6 = 5.5;
+        console.log(kintamasis6);
+
+        //Tiesa, melas - boolean
+
+        var tiesa = true;
+        var melas = false;
+
+        console.log(tiesa);
+        console.log(melas);
+
+        //Isvesti dvieju skaitmenu suma
+        //2 kintamieji - a, b. Suma isvesti - suma. console.log
+
+        var a, b, suma;
+        a = 123;
+        //b=a priskirti kito kintamojo reiksme
+        b = a;
+        suma = a + b;
+        console.log("Dvieju skaitmenu suma:");
+        console.log(suma);
+
+        //skirtumas
+        var skirtumas, sk1, sk2;
+        sk1 = 100;
+        sk2 = 90;
+        skirtumas = sk1 - sk2;
+        console.log("Dvieju skirtumas:")
+        console.log(skirtumas);
+
+        //daugyba
+        var daugyba;
+        daugyba = sk1 * sk2;
+        console.log(daugyba);
+
+        //dalyba
+        var dalyba;
+        dalyba = parseInt(sk1 / sk2); //tik sveikoji dalis
+        console.log(dalyba);
+
+        //dalyba (liekanos gavimas)
+        var liekana;
+        liekana = sk1 % sk2;
+        console.log(liekana);
+
+        var k1, k2, k3, k4;
+        k1 = 155;
+        k2 = 45;
+        k3 = 101;
+        k4 = 136365153;
+
+        var l1, l2, l3, l4;
+        l1 = k1 % 2; // liekana 0 - skaicius lyginis
+        l2 = k2 % 2; // liekana 1 - skaicius nelyginis
+        l3 = k3 % 2;
+        l4 = k4 % 2;
+
+        //kelimas laipsniu
+        var laipsnis;
+        laipsnis = sk1 ** 3; //keliant 0 gausis 1
+        // laipsnis = Math.pow(sk1,3);
+        console.log(laipsnis);
+
+
+
+        //saknis
+        var saknis;
+        // saknis = laipsnis ** (1/2);
+        saknis = Math.sqrt(laipsnis);
+        console.log(saknis);
+
+        //atemimas ir pridejimas elementui po vieneta
+
+        var i = 100;
+        i++;
+        console.log(i);
+
+        i--;
+        i--;
+        console.log(i);
+
+        var naujaSuma
+
+        naujaSuma = 5 + 4 * 9;
+        console.log(naujaSuma);
+
+        var rez;
+        rez = 5 / 4 * 3;
+        console.log(rez);
+        
+        // ribiniai atvejai
+        // saknis is neigiamo skaiciaus
+        var saknisNeig = Math.sqrt (-8);
+        console.log(saknisNeig);
+
+        // dalyba is nulio
+        var dalybaNulis = 8/0;
+        console.log(dalybaNulis);
+
+        //teksto sudetis su skaiciais
+
+        var tekstas = "as esu tekstas";
+        var skaicius = -5;
+        var dukint = tekstas + skaicius;
+        console.log (dukint);
+        //error
+        //atminties adresu suma
+        //as esu tekstas-5 +
+
+        console.log("Dalyba is nulio: " +dalybaNulis);
+
+        var duKint = tekstas - skaicius;
+        console.log(dukint);
+    </script>
 </body>
+
 </html>
